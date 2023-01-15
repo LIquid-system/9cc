@@ -1,5 +1,5 @@
 #! /bin/bash
-set -euxo pipefail
+# set -euxo pipefail
 assert(){
   expected="$1"
   input="$2"
@@ -18,5 +18,6 @@ assert(){
 
 assert 0 0
 assert 42 42
+assert 21 "5+20-4"
 
 echo OK
